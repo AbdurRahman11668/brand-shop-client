@@ -3,6 +3,8 @@ import Root from "../Layout/Root";
 import ErrorPage from "../Pages/ErrorPage";
 import Home from "../Pages/Home";
 import PrivateRoute from "./PrivateRoute";
+import Login from "../pages/Login";
+import Register from "../Pages/Register";
 // import AddProducts from "../Pages/AddProducts";
 
 const router = createBrowserRouter([
@@ -25,6 +27,15 @@ const router = createBrowserRouter([
       //   ),
       //   loader: () => fetch('/categories.json')
       // },
+      
+      {
+        path: "/login",
+        element: <Login></Login>
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
+      },
     ],
   },
 ]);
