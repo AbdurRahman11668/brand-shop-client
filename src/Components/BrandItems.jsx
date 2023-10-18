@@ -1,7 +1,7 @@
 const BrandItems = () => {
   return (
     <div className="py-20">
-      <div className="flex flex-wrap space-x-5 space-y-5 lg:space-x-10 items-center py-5 px-10 justify-center">
+      <div className="flex flex-wrap space-x-5 space-y-5 lg:space-x-10 items-center py-5 justify-center">
         <div className="text-center cursor-pointer">
           <img
             src="https://i.ibb.co/QDHyx8V/apple.png"
