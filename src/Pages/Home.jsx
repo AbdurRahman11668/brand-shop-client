@@ -1,8 +1,11 @@
+import Banner from "../Components/Banner";
+import BrandItems from "../Components/BrandItems";
 
 const Home = () => {
     return (
         <div>
-            <h2 className='text-3xl'>Home</h2>
+            <Banner></Banner>
+            <BrandItems></BrandItems>
         </div>
     );
 };

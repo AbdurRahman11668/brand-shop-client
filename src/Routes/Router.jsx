@@ -5,7 +5,8 @@ import Home from "../Pages/Home";
 import PrivateRoute from "./PrivateRoute";
 import Login from "../pages/Login";
 import Register from "../Pages/Register";
-// import AddProducts from "../Pages/AddProducts";
+import AddProducts from "../Pages/AddProducts";
+import MyCart from "../Pages/MyCart";
 
 const router = createBrowserRouter([
   {
@@ -18,15 +19,14 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
       },
-      // {
-      //   path: "/card/:id",
-      //   element: (
-      //     <PrivateRoute>
-      //       <AddProducts></AddProducts>
-      //     </PrivateRoute>
-      //   ),
-      //   loader: () => fetch('/categories.json')
-      // },
+      {
+        path: "/addproducts",
+        element: (
+          <PrivateRoute>
+            <AddProducts></AddProducts>
+          </PrivateRoute>
+        ),
+      },
       
       {
         path: "/login",
@@ -35,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/cart",
+        element: <MyCart></MyCart>,
       },
     ],
   },

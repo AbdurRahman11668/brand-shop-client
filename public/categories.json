@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "image": "xiaomi",
+    "name": "Smartphone X",
+    "brand_name": "TechGadget",
+    "type": "Smartphone",
+    "description": "The latest flagship smartphone with a powerful camera and high-performance processor.",
+    "price": 799.99
+  },
+  {
+    "id": 2,
+    "image": "electronics1.jpg",
+    "name": "Smartphone X",
+    "brand_name": "TechGadget",
+    "type": "Laptop",
+    "description": "The latest flagship smartphone with a powerful camera and high-performance processor.",
+    "price": 799.99
+  },
+  {
+    "id": 3,
+    "image": "electronics1.jpg",
+    "name": "Smartphone X",
+    "brand_name": "TechGadget",
+    "type": "Headphones",
+    "description": "The latest flagship smartphone with a powerful camera and high-performance processor.",
+    "price": 799.99
+  },
+  {
+    "id": 4,
+    "image": "electronics1.jpg",
+    "name": "Smartphone X",
+    "brand_name": "TechGadget",
+    "type": "Smartwatch",
+    "description": "The latest flagship smartphone with a powerful camera and high-performance processor.",
+    "price": 799.99
+  },
+  {
+    "id": 5,
+    "image": "electronics1.jpg",
+    "name": "Smartphone X",
+    "brand_name": "TechGadget",
+    "type": "Smartphone",
+    "description": "The latest flagship smartphone with a powerful camera and high-performance processor.",
+    "price": 799.99
+  },
+  {
+    "id": 6,
+    "image": "electronics1.jpg",
+    "name": "Smartphone X",
+    "brand_name": "TechGadget",
+    "type": "Smartphone",
+    "description": "The latest flagship smartphone with a powerful camera and high-performance processor.",
+    "price": 799.99
+  },
+]
