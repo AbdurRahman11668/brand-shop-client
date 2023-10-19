@@ -5,8 +5,14 @@ import Home from "../Pages/Home";
 import PrivateRoute from "./PrivateRoute";
 import Login from "../pages/Login";
 import Register from "../Pages/Register";
-import AddProducts from "../Pages/AddProducts";
 import MyCart from "../Pages/MyCart";
+import AddProduct from "../Pages/AddProduct";
+import Apple from "../Pages/Brands/Apple/Apple";
+import Samsung from "../Pages/Brands/Samsung/Samsung";
+import Sony from "../Pages/Brands/Sony/Sony";
+import Xiaomi from "../Pages/Brands/Xiaomi/Xiaomi";
+import Microsoft from "../Pages/Brands/Microsoft/Microsoft";
+import Google from "../Pages/Brands/Google/Google";
 
 const router = createBrowserRouter([
   {
@@ -20,14 +26,14 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/addproducts",
+        path: "/addproduct",
         element: (
           <PrivateRoute>
-            <AddProducts></AddProducts>
+            <AddProduct></AddProduct>
           </PrivateRoute>
         ),
+        loader: () => fetch("http://localhost:5000/products")
       },
-      
       {
         path: "/login",
         element: <Login></Login>
@@ -35,6 +41,30 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/apple",
+        element: <Apple></Apple>,
+      },
+      {
+        path: "/samsung",
+        element: <Samsung></Samsung>,
+      },
+      {
+        path: "/sony",
+        element: <Sony></Sony>,
+      },
+      {
+        path: "/xiaomi",
+        element: <Xiaomi></Xiaomi>,
+      },
+      {
+        path: "/microsoft",
+        element: <Microsoft></Microsoft>,
+      },
+      {
+        path: "/google",
+        element: <Google></Google>,
       },
       {
         path: "/cart",

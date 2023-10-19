@@ -1,14 +1,14 @@
 const News = () => {
   return (
     <div className="px-[75px] mb-20">
-      <div className="flex">
-        <div className="relative w-1/3 cursor-pointer hover:scale-105 hover:duration-700">
+      <div className="md:flex">
+        <div className="relative w-full md:w-[44.45%] lg:w-1/3 cursor-pointer hover:scale-105 hover:duration-700">
           <img
             src="https://i.ibb.co/0yrmczn/electro-banner1-2.webp"
-            className=""
+            className=" mx-auto"
             alt=""
           />
-          <div className="absolute top-10 pl-10">
+          <div className="absolute top-10 left-28 md:left-10">
             <div className="max-w-md space-y-5">
               <p className="text-xl text-gray-300">High Tech News</p>
               <h2 className="text-4xl text-white font-bold">
@@ -20,14 +20,14 @@ const News = () => {
             </div>
           </div>
         </div>
-        <div className="w-[41.7%]">
+        <div className="w-full md:w-[55.55%] lg:w-[41.7%]">
           <div className="relative w-full cursor-pointer hover:scale-105 hover:duration-700">
             <img
               src="https://i.ibb.co/mzDV0s5/electro-banner3-1.webp"
-              className=""
+              className="mx-auto w-[70.5%] md:w-full"
               alt=""
             />
-            <div className="absolute text-start text-neutral-content top-5 left-5">
+            <div className="absolute text-start text-neutral-content top-5 left-28 md:left-5">
               <div className="max-w-md space-y-2">
                 <p className="text-xl text-gray-300">Play The Dream</p>
                 <h2 className="text-3xl text-white font-bold">
@@ -38,13 +38,13 @@ const News = () => {
               </div>
             </div>
           </div>
-          <div className="relative w-full cursor-pointer hover:scale-105 hover:duration-700">
+          <div className="relative w-full md:w- cursor-pointer hover:scale-105 hover:duration-700">
             <img
               src="https://i.ibb.co/v3rYGmQ/electro-banner3.webp"
-              className=""
+              className="mx-auto w-[70.5%] md:w-full"
               alt=""
             />
-            <div className="absolute text-start text-neutral-content top-5 left-5">
+            <div className="absolute text-start text-neutral-content top-5 left-28 md:left-5">
               <div className="space-y-2">
                 <p className="text-xl text-gray-400">Minimalism Design</p>
                 <h2 className="text-3xl text-white font-bold">
@@ -56,7 +56,7 @@ const News = () => {
             </div>
           </div>
         </div>
-        <div className="relative w-[25%] cursor-pointer hover:scale-105 hover:duration-700">
+        <div className="relative hidden lg:block lg:w-[25%] cursor-pointer hover:scale-105 hover:duration-700">
           <img
             src="https://i.ibb.co/v1PBY6b/electro-banner.webp"
             className=""

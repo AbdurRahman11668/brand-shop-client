@@ -19,7 +19,7 @@ const Navbar = () => {
       {
         user && <>
           <li>
-          <NavLink to="/addproducts" className='hover:bg-red-600 hover:text-white'>Add Product</NavLink>
+          <NavLink to="/addproduct" className='hover:bg-red-600 hover:text-white'>Add Product</NavLink>
           </li>
         </>
       }

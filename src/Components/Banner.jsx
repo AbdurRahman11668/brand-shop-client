@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <div className="lg:px-20">
-      <div className="hero">
+      <div className="hero lg:pl-10">
         <div className="hero-content text-center lg:text-start flex-col lg:flex-row-reverse">
           <img
             src="https://i.ibb.co/3dfwcYp/ezgif-com-webp-to-jpg-removebg.png"
-            className="max-w-xl lg:max-w-3xl lg:ml-32"
+            className="max-w-md md:max-w-lg lg:max-w-2xl lg:ml-32"
           />
           <div className="">
             <h1 className="text-3xl md:text-5xl font-bold mb-5 text-red-600">WONDERFUL <br />
