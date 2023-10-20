@@ -1,14 +1,12 @@
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
+const SonyCard = ({ product}) => {
+    const { _id, name, brand, rating, type, description, price, image } = product;
 
-const AppleCard = ({ product}) => {
-  const { _id, name, brand, rating, type, description, price, image } = product;
-
-  const ratings = 0;
-
-  return (
-    <div className="">
+    const ratings = 0;
+    return (
+        <div className="">
       <div className="">
         <div className="card-side bg-gray-100 shadow-md h-[580px] px-10 rounded-lg">
           <figure className="w-full py-5">
@@ -39,7 +37,7 @@ const AppleCard = ({ product}) => {
                 {price}
               </p>
               <div className="space-x-10">
-                <Link to={`/apple/${_id}`}>
+                <Link to={`/sony/${_id}`}>
                   <button className="text-lg px-5 font-semibold btn bg-red-600 text-white hover:border-red-600 hover:text-red-600">
                     Details
                   </button>
@@ -55,7 +53,7 @@ const AppleCard = ({ product}) => {
         </div>
       </div>
     </div>
-  );
+    );
 };
 
-export default AppleCard;
+export default SonyCard;

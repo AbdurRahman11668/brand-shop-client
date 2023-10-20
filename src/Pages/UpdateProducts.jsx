@@ -65,7 +65,7 @@ const UpdateProducts = () => {
               </label>
               <label className="input-group">
                 <input
-                  type="Text"
+                  type="text"
                   name="name"
                   defaultValue={name}
                   placeholder="Product Name"

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 
 import AppleIpadAirdetails from "./AppleIpadAirdetails";
@@ -8,7 +8,7 @@ const AppleIpadAir = () => {
 
   const [data, setData] = useState(loadedAppleData)
 
-  const filteredData = data.filter((item) => item.type === "Ipad");
+  const filteredData = data.filter((item) => item.type === "Ipad" && item.brand === "Apple" );
 
 
   return (
