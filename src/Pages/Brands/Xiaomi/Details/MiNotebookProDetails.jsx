@@ -44,7 +44,7 @@ const MiNotebookProDetails = ({ product, data, setData }) => {
       <div key={_id}>
         <div className="pb-10 px-20">
           <div className="w-full">
-            <img className="w-2/3 mx-auto" src={image} alt="" />
+            <img className="md:w-2/3 mx-auto" src={image} alt="" />
           </div>
           <div>
             <h3 className="text-center text-red-600 font-bold text-4xl">
@@ -52,45 +52,27 @@ const MiNotebookProDetails = ({ product, data, setData }) => {
             </h3>
             <div className="pt-10 space-y-5">
               <p className="text-gray-600 text-lg font-medium">
-                M1 chip offers a performance boost. Front-facing camera comes
-                with Center Stage. 5G connectivity (sub-6 only). Solid battery
-                life. Same price as the iPad Air 2020.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The 2022 iPad Air sports nearly the same bezel-free design, a
-                10.9-inch display with 500 nits of brightness, a Touch ID top
-                button, USB-C port, 12-megapixel rear camera, and an array of
-                vibrant colors. And while repetition is typically prone to
-                criticism, the iPad Air’s redesign is still fresh enough that
-                this new Air doesn't feel boring. The colorful tablet has a
-                sleek look that begs to be carried around without a case.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                But if you do want to use a case for additional protection,
-                Apple's proprietary smart connector on the back allows you to
-                magnetically attach the iPad to Apple's Smart Keyboard, Smart
-                Folio, and Magic Keyboard. And since the new iPad Air has the
-                exact same dimensions as the 2020 version, you won't have to buy
-                new accessories if you're upgrading.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                It's also worth noting that if you want to get the most out of
-                your slim new computer and enjoy the complete iPad Air
-                experience, you'll have to splurge for the Magic Keyboard ($299)
-                and second-generation Apple Pencil ($129). Adding those things
-                to the $599 64-GB iPad Air brings your total to $1,028.
-                Meanwhile, the M1-powered MacBook Air starts at $999. So you
-                might want to look into third-party accessories.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The iPad Air comes with 5G connectivity. It doesn't have support
-                for the faster millimeter-wave 5G service, but it supports the
-                more prevalent sub-6 5G networks, which give you a slight speed
-                boost over LTE. To get the 5G connectivity you will of course
-                have to purchase the cellular model of the iPad Air, which
-                starts at $749. On top of that, you'll need a cellular plan.{" "}
+              Xiaomi Mi NoteBook Pro Laptop Review: Handicapped Core i7-11370H limits an otherwise good device <br /> <br />
+All that is aluminum isn't fast. The Xiaomi Mi NoteBook Pro seeks to be a worthy mid-ranger with a premium all-aluminum chassis, a good 2.5K 16:10 display, and a decent spec sheet. While the Mi NoteBook Pro definitely gets the job done for the most part, a thorough investigation reveals that Xiaomi is not able to extract the maximum possible performance from the Core i7-11370H for the ₹73,999 (US$993) asking price. <br /> <br />
+
+Since the launch of the Mi NoteBook 14 Horizon Edition in 2020, Xiaomi has been trying to make a mark for itself in the mid-range laptop niche. A few months ago, Xiaomi introduced two new laptops in the Indian market — the Mi NoteBook Pro and the Mi NoteBook Ultra. We have with us the Mi NoteBook Pro for review.
+<br /> <br />
+The Mi NoteBook Pro is a 14-inch laptop that resembles the RedmiBook Pro 15 in more ways than one. Our test sample is powered by the Intel Tiger Lake-H35 Core i7-11370H, 16 GB DDR4-3200 RAM, and a 512 GB NVMe SSD, which is the maximum configurable option in the Pro series. This configuration will set you back by ₹73,999 (US$993).
+<br /> <br />
+In this review, we take the Mi NoteBook Pro for a spin and see whether the laptop performs as well as it looks.<br /> <br />
+Processor: Intel Core i7-11370H 4 x 3.3 - 4.8 GHz, 64 W PL2 / Short Burst, 28 W PL1 / Sustained, Tiger Lake-H35 <br />
+Graphics adapter: Intel Iris Xe Graphics G7 96EUs, 30.0.101.1191 <br />
+Memory: 16 GB   <br />
+, DDR4-3200 Dual-Channel, Timings: 22-22-22-52 <br />
+Display: 14.00 inch 16:10, 2560 x 1600 pixel 216 PPI, Panda LM140GF1L02, Oxide TFT-LCD  <br />FFS, 178° Wide-viewing angle, glossy: no, 60 Hz <br />
+Mainboard: Intel Tiger Lake-UP3 PCH-LP <br />
+Storage: YMTC PC005 Active 512GB, 512 GB  
+, 438 GB free <br />
+Weight1.4 kg ( = 49.38 oz / 3.09 pounds) ( = 0 oz / 0 pounds)
+
               </p>
             </div>
+            <button className=" text-red-600 font-semibold text-lg">{price}</button>
             <div className="text-center py-10">
               <button
                 onClick={handleAddProduct}

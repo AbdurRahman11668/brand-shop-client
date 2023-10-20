@@ -7,7 +7,7 @@ const GalaxyS23 = () => {
   
     const [data, setData] = useState(loadedAppleData)
   
-    const filteredData = data.filter((item) => item.type === "SmartPhone" && item.brand === "Samsung");
+    const filteredData = data.filter((item) => item.type === "SmartPhone" && item.brand === "Samsung" && item.name === "Galaxy S23 Ultra");
     return (
         <div>
             {filteredData.map((product) => (

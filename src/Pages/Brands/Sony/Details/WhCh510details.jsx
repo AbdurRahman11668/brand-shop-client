@@ -15,8 +15,15 @@ const AWhCh510details = ({ product, data, setData }) => {
     const price2 = price;
     const image2 = image;
     const allProducts = {
-        id, name2, brand2, type2, rating2, description2, price2, image2
-    }
+      id,
+      name2,
+      brand2,
+      type2,
+      rating2,
+      description2,
+      price2,
+      image2,
+    };
     fetch("http://localhost:5000/cart", {
       method: "POST",
       headers: {
@@ -43,7 +50,7 @@ const AWhCh510details = ({ product, data, setData }) => {
       <div key={_id}>
         <div className="pb-10 px-20">
           <div className="w-full">
-            <img className="w-2/3 mx-auto" src={image} alt="" />
+            <img className="md:w-2/3 mx-auto" src={image} alt="" />
           </div>
           <div>
             <h3 className="text-center text-red-600 font-bold text-4xl">
@@ -51,45 +58,61 @@ const AWhCh510details = ({ product, data, setData }) => {
             </h3>
             <div className="pt-10 space-y-5">
               <p className="text-gray-600 text-lg font-medium">
-                M1 chip offers a performance boost. Front-facing camera comes
-                with Center Stage. 5G connectivity (sub-6 only). Solid battery
-                life. Same price as the iPad Air 2020.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The 2022 iPad Air sports nearly the same bezel-free design, a
-                10.9-inch display with 500 nits of brightness, a Touch ID top
-                button, USB-C port, 12-megapixel rear camera, and an array of
-                vibrant colors. And while repetition is typically prone to
-                criticism, the iPad Air’s redesign is still fresh enough that
-                this new Air doesn't feel boring. The colorful tablet has a
-                sleek look that begs to be carried around without a case.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                But if you do want to use a case for additional protection,
-                Apple's proprietary smart connector on the back allows you to
-                magnetically attach the iPad to Apple's Smart Keyboard, Smart
-                Folio, and Magic Keyboard. And since the new iPad Air has the
-                exact same dimensions as the 2020 version, you won't have to buy
-                new accessories if you're upgrading.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                It's also worth noting that if you want to get the most out of
-                your slim new computer and enjoy the complete iPad Air
-                experience, you'll have to splurge for the Magic Keyboard ($299)
-                and second-generation Apple Pencil ($129). Adding those things
-                to the $599 64-GB iPad Air brings your total to $1,028.
-                Meanwhile, the M1-powered MacBook Air starts at $999. So you
-                might want to look into third-party accessories.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The iPad Air comes with 5G connectivity. It doesn't have support
-                for the faster millimeter-wave 5G service, but it supports the
-                more prevalent sub-6 5G networks, which give you a slight speed
-                boost over LTE. To get the 5G connectivity you will of course
-                have to purchase the cellular model of the iPad Air, which
-                starts at $749. On top of that, you'll need a cellular plan.{" "}
+                The Sony WH-CH510 is a pretty standard—albeit very
+                cheap-feeling—set of wireless on-ear headphones. It’s made
+                mostly of a very lightweight matte plastic with a diamond-shaped
+                texture on the outside. As expected of inexpensive headphones,
+                the Sony WH-CH510 has a very basic foam and soft coating for ear
+                pads. It’s more comfortable than many cheaper headphones, but it
+                creaks and groans when bent because of the quality of plastic in
+                the band. Whether you have a smaller head or larger one, the
+                clamping force isn’t very high—again, this is a very cheap
+                plastic—but you definitely won’t forget you’re wearing it.{" "}
+                <br /> <br />
+                Like the premium Sony WH-1000XM5, these headphones don’t fold
+                down for a smaller footprint, so they take up a larger amount of
+                space than it feels like they should. However, the ear cups can
+                swivel 90 degrees to rest flat on a table or your clavicles if
+                need be. Unlike many of the higher-end models of Sony
+                headphones, there is no wired option for listening here. <br />
+                If you just look at the score at the top of the page, you’d get
+                a pretty generous assessment of the Sony WH-CH510. On paper,
+                these are great headphones for $60 USD, but that score doesn’t
+                take into account a rather notable user problem with the
+                Sidetone feature.
+                <br /> <br />
+                What is Sidetone? <br />
+                Sidetone is similar to a transparency mode on noise canceling
+                headphones, but with the not-so-fun drawback that you can’t turn
+                it off on this set of headphones. This feature is supposed to
+                only be enabled for phone calls as it would be with most
+                headphones, but in our use: the Sony WH-CH510 sometimes flips it
+                on if you talk while your headphones are on—not just on a phone
+                call. It’s easy to see the intent here: if you’re on a call you
+                need to be able to hear yourself so you don’t accidentally raise
+                your voice too loudly. This is a standard feature of most
+                Bluetooth headphones, and it’s an extreme rarity that it
+                malfunctions. However, something’s up with the implementation of
+                Sidetone on the Sony WH-CH510. <br />
+                We can’t get Sidetone working the same way twice, with even the
+                same devices. One day, the Sidetone is active with an Asus
+                phone, and then weeks later it isn’t. Same, too, for a Google
+                Pixel phone. iPhones don’t seem to have this trouble, nor does
+                the Mac Mini. It doesn’t work with the Windows PC in our testing
+                setup, but when we leave the lab it connects to a different
+                computer running the same version of Windows and it’s back. When
+                it’s active, it’s a colossal distraction, but when it’s inactive
+                the headphones are inoffensive at worst.
+                <br />
+                We’re going to go out on a limb and say that for most, this
+                won’t inspire confidence. Walking my dog down the main road in
+                my town, the Sony WH-CH510 is frustrating, but at the SoundGuys
+                office: perfectly fine. Your mileage will vary depending greatly
+                on where you listen, and whether or not the Sidetone feature is
+                working in a predictable way.
               </p>
             </div>
+            <button className=" text-red-600 font-semibold text-lg">{price}</button>
             <div className="text-center py-10">
               <button
                 onClick={handleAddProduct}

@@ -1,6 +1,6 @@
 import Swal from "sweetalert2";
 const Swr50Details = ({ product, data, setData }) => {
-    const { _id, name, brand, type, rating, description, price, image } = product;
+  const { _id, name, brand, type, rating, description, price, image } = product;
 
   const handleAddProduct = (e) => {
     e.preventDefault();
@@ -14,8 +14,15 @@ const Swr50Details = ({ product, data, setData }) => {
     const price2 = price;
     const image2 = image;
     const allProducts = {
-        id, name2, brand2, type2, rating2, description2, price2, image2
-    }
+      id,
+      name2,
+      brand2,
+      type2,
+      rating2,
+      description2,
+      price2,
+      image2,
+    };
     fetch("http://localhost:5000/cart", {
       method: "POST",
       headers: {
@@ -37,12 +44,12 @@ const Swr50Details = ({ product, data, setData }) => {
       });
   };
 
-    return (
-        <div>
+  return (
+    <div>
       <div key={_id}>
         <div className="pb-10 px-20">
           <div className="w-full">
-            <img className="w-2/3 mx-auto" src={image} alt="" />
+            <img className="md:w-2/3 mx-auto" src={image} alt="" />
           </div>
           <div>
             <h3 className="text-center text-red-600 font-bold text-4xl">
@@ -50,45 +57,64 @@ const Swr50Details = ({ product, data, setData }) => {
             </h3>
             <div className="pt-10 space-y-5">
               <p className="text-gray-600 text-lg font-medium">
-                M1 chip offers a performance boost. Front-facing camera comes
-                with Center Stage. 5G connectivity (sub-6 only). Solid battery
-                life. Same price as the iPad Air 2020.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The 2022 iPad Air sports nearly the same bezel-free design, a
-                10.9-inch display with 500 nits of brightness, a Touch ID top
-                button, USB-C port, 12-megapixel rear camera, and an array of
-                vibrant colors. And while repetition is typically prone to
-                criticism, the iPad Air’s redesign is still fresh enough that
-                this new Air doesn't feel boring. The colorful tablet has a
-                sleek look that begs to be carried around without a case.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                But if you do want to use a case for additional protection,
-                Apple's proprietary smart connector on the back allows you to
-                magnetically attach the iPad to Apple's Smart Keyboard, Smart
-                Folio, and Magic Keyboard. And since the new iPad Air has the
-                exact same dimensions as the 2020 version, you won't have to buy
-                new accessories if you're upgrading.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                It's also worth noting that if you want to get the most out of
-                your slim new computer and enjoy the complete iPad Air
-                experience, you'll have to splurge for the Magic Keyboard ($299)
-                and second-generation Apple Pencil ($129). Adding those things
-                to the $599 64-GB iPad Air brings your total to $1,028.
-                Meanwhile, the M1-powered MacBook Air starts at $999. So you
-                might want to look into third-party accessories.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The iPad Air comes with 5G connectivity. It doesn't have support
-                for the faster millimeter-wave 5G service, but it supports the
-                more prevalent sub-6 5G networks, which give you a slight speed
-                boost over LTE. To get the 5G connectivity you will of course
-                have to purchase the cellular model of the iPad Air, which
-                starts at $749. On top of that, you'll need a cellular plan.{" "}
+                It's a powerful and well-equipped wearable with a good screen
+                and reasonable battery life. If it could do all that while
+                looking like an actual wristwatch it would be a real winner.
+                <br /> <br />
+                <span className="font-bold">Pros:</span> <br />
+                +Slick performance <br />
+                +Built in GPS <br />
+                +Good screen <br />
+                <span className="font-bold">Cons:</span> <br />
+                -Not super stylish <br />
+                -Iffy GPS performance <br />
+                -Fiddly charging port <br />
+                pdate: Almost four years after the Smartwatch 3 was released,
+                Sony's last top-end wearable is very difficult to find on sale.
+                The company hasn't updated the watch to Android Wear 2.0 or Wear
+                OS and its general age makes this a very difficult watch to
+                recommend searching for in 2018.
+                <br />
+                The company has shown no intention of releasing a Sony
+                SmartWatch 4 either, so if you want a smartwatch from Sony you
+                may be disappointed and you can also take a look at our guide to
+                the best Wear OS watches right now. <br />
+                The Sony SmartWatch 3 is more than just a smartwatch, it's also
+                got ambitions as a capable fitness watch, thanks to the
+                inclusion of GPS.
+                <br />
+                It doesn't make the most stunning first impression, especially
+                when compared to the more traditional circular stylings of the
+                Moto 360 and Huawei Watch. The Sony SmartWatch 3 rocks a square
+                shape that's more similar to the Pebble Time than other Android
+                Wear devices.
+                <br />
+                But, where its appearance might fall flat, it surprises in other
+                ways. For one thing, the mere fact that it runs Android Wear is
+                a bit of a shock, given that Sony has spent the last few years
+                shying away from it, attempting to perfect its own system
+                instead.
+                <br />
+                But it's a decision that I welcome. Android Wear is still
+                finding its footing and with Sony jumping into the mix can only
+                be a good thing.
+                <br />
+                Its 1.2GHz quad-core processor and 512MB of RAM pack it with
+                power, even to today's standards. And with GPS built in, it's a
+                more fully-functional fitness accessory than most other
+                smartwatches available. <br />
+                Of course, all that power doesn't come cheap, as the Sony
+                SmartWatch 3 retails for £189.99 (about US$250, AU$299.99).
+                However, if you do some digging, you can probably find yourself
+                a big discount.
+                <br />
+                All in all, it's not quite the most expensive smartwatch. The
+                aforementioned Moto 360 and Huawei Watch both edge it out,
+                seemingly charging a premium for a circular, fashionable
+                styling.
               </p>
             </div>
+            <button className=" text-red-600 font-semibold text-lg">{price}</button>
             <div className="text-center py-10">
               <button
                 onClick={handleAddProduct}
@@ -101,7 +127,7 @@ const Swr50Details = ({ product, data, setData }) => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default Swr50Details;

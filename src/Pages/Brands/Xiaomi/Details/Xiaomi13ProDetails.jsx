@@ -44,7 +44,7 @@ const Xiaomi13ProDetails = ({ product, data, setData }) => {
       <div key={_id}>
         <div className="pb-10 px-20">
           <div className="w-full">
-            <img className="w-2/3 mx-auto" src={image} alt="" />
+            <img className="md:w-2/3 mx-auto" src={image} alt="" />
           </div>
           <div>
             <h3 className="text-center text-red-600 font-bold text-4xl">
@@ -52,45 +52,16 @@ const Xiaomi13ProDetails = ({ product, data, setData }) => {
             </h3>
             <div className="pt-10 space-y-5">
               <p className="text-gray-600 text-lg font-medium">
-                M1 chip offers a performance boost. Front-facing camera comes
-                with Center Stage. 5G connectivity (sub-6 only). Solid battery
-                life. Same price as the iPad Air 2020.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The 2022 iPad Air sports nearly the same bezel-free design, a
-                10.9-inch display with 500 nits of brightness, a Touch ID top
-                button, USB-C port, 12-megapixel rear camera, and an array of
-                vibrant colors. And while repetition is typically prone to
-                criticism, the iPad Air’s redesign is still fresh enough that
-                this new Air doesn't feel boring. The colorful tablet has a
-                sleek look that begs to be carried around without a case.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                But if you do want to use a case for additional protection,
-                Apple's proprietary smart connector on the back allows you to
-                magnetically attach the iPad to Apple's Smart Keyboard, Smart
-                Folio, and Magic Keyboard. And since the new iPad Air has the
-                exact same dimensions as the 2020 version, you won't have to buy
-                new accessories if you're upgrading.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                It's also worth noting that if you want to get the most out of
-                your slim new computer and enjoy the complete iPad Air
-                experience, you'll have to splurge for the Magic Keyboard ($299)
-                and second-generation Apple Pencil ($129). Adding those things
-                to the $599 64-GB iPad Air brings your total to $1,028.
-                Meanwhile, the M1-powered MacBook Air starts at $999. So you
-                might want to look into third-party accessories.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The iPad Air comes with 5G connectivity. It doesn't have support
-                for the faster millimeter-wave 5G service, but it supports the
-                more prevalent sub-6 5G networks, which give you a slight speed
-                boost over LTE. To get the 5G connectivity you will of course
-                have to purchase the cellular model of the iPad Air, which
-                starts at $749. On top of that, you'll need a cellular plan.{" "}
+              It's awkward to be a middle child, they say. You aren't the first born, you aren't the youngest, you're just there, in the middle, constantly forgotten - the firstborn is the oldest and gets all the accolades, while the youngest is the smallest, requiring a lot of attention. You, on the other hand, are neither.
+ <br /> <br />
+This is the position the Xiaomi 13 Pro finds itself in. The 13 Ultra is the accolade-collecting overachiever, the vanilla 13 is the only one of the series that's going to work well with small hands (or people who simply prefer smaller - if not small per se - phones), and the 13 Pro... also exists. <br /> <br />
+That's what the situation looks like from afar, at least. Look a little closer, use the 13 Pro for an extended amount of time like we did for this review, and your perception changes. It's much more than an awkward middle child. In fact, it's arguably almost equal to the much praised 13 Ultra, if you don't really care about having the best of the best when it comes to cameras and screen brightness.
+ <br /> <br />
+So despite what a cursory look at the three models might have you believe, we don't think the 13 Pro was simply launched so that there wouldn't be a huge price and spec gap between the 13 and the 13 Ultra. It's not just awkwardly assigned to arbitrarily fill that gap in the portfolio, it stands on its own right, and we'll let you know all the ways in which it does in this long-term review. <br /> <br />
+Truth be told, the Xiaomi 13 Pro surprised us, and that rarely happens anymore. When we say 'surprised', we mean in a good way, mostly - we definitely don't think you should sleep on this one. It does however have some now-unfortunately-standard for Xiaomi issues that we'll also describe, just so you know exactly what you're getting if you are thinking of picking one up. So, without further ado, let's get to it. Join us over the next few pages as we tell you what it was like to live with the Xiaomi 13 Pro day in and day out as our one and only smartphone.
               </p>
             </div>
+            <button className=" text-red-600 font-semibold text-lg">{price}</button>
             <div className="text-center py-10">
               <button
                 onClick={handleAddProduct}

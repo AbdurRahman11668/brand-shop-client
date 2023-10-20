@@ -1,6 +1,6 @@
 import Swal from "sweetalert2";
 const GalaxyS23Details = ({ product, data, setData }) => {
-    const { _id, name, brand, type, rating, description, price, image } = product;
+  const { _id, name, brand, type, rating, description, price, image } = product;
 
   const handleAddProduct = (e) => {
     e.preventDefault();
@@ -14,8 +14,15 @@ const GalaxyS23Details = ({ product, data, setData }) => {
     const price2 = price;
     const image2 = image;
     const allProducts = {
-        id, name2, brand2, type2, rating2, description2, price2, image2
-    }
+      id,
+      name2,
+      brand2,
+      type2,
+      rating2,
+      description2,
+      price2,
+      image2,
+    };
     fetch("http://localhost:5000/cart", {
       method: "POST",
       headers: {
@@ -37,14 +44,12 @@ const GalaxyS23Details = ({ product, data, setData }) => {
       });
   };
 
-
-
-    return (
-        <div>
+  return (
+    <div>
       <div key={_id}>
         <div className="pb-10 px-20">
           <div className="w-full">
-            <img className="w-2/3 mx-auto" src={image} alt="" />
+            <img className="md:w-2/3 mx-auto" src={image} alt="" />
           </div>
           <div>
             <h3 className="text-center text-red-600 font-bold text-4xl">
@@ -52,45 +57,65 @@ const GalaxyS23Details = ({ product, data, setData }) => {
             </h3>
             <div className="pt-10 space-y-5">
               <p className="text-gray-600 text-lg font-medium">
-                M1 chip offers a performance boost. Front-facing camera comes
-                with Center Stage. 5G connectivity (sub-6 only). Solid battery
-                life. Same price as the iPad Air 2020.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The 2022 iPad Air sports nearly the same bezel-free design, a
-                10.9-inch display with 500 nits of brightness, a Touch ID top
-                button, USB-C port, 12-megapixel rear camera, and an array of
-                vibrant colors. And while repetition is typically prone to
-                criticism, the iPad Air’s redesign is still fresh enough that
-                this new Air doesn't feel boring. The colorful tablet has a
-                sleek look that begs to be carried around without a case.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                But if you do want to use a case for additional protection,
-                Apple's proprietary smart connector on the back allows you to
-                magnetically attach the iPad to Apple's Smart Keyboard, Smart
-                Folio, and Magic Keyboard. And since the new iPad Air has the
-                exact same dimensions as the 2020 version, you won't have to buy
-                new accessories if you're upgrading.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                It's also worth noting that if you want to get the most out of
-                your slim new computer and enjoy the complete iPad Air
-                experience, you'll have to splurge for the Magic Keyboard ($299)
-                and second-generation Apple Pencil ($129). Adding those things
-                to the $599 64-GB iPad Air brings your total to $1,028.
-                Meanwhile, the M1-powered MacBook Air starts at $999. So you
-                might want to look into third-party accessories.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The iPad Air comes with 5G connectivity. It doesn't have support
-                for the faster millimeter-wave 5G service, but it supports the
-                more prevalent sub-6 5G networks, which give you a slight speed
-                boost over LTE. To get the 5G connectivity you will of course
-                have to purchase the cellular model of the iPad Air, which
-                starts at $749. On top of that, you'll need a cellular plan.{" "}
+                If the Samsung S22 Ultra was the ultimate evolution of a
+                slab-style smartphone, then the Galaxy S23 Ultra is a victory
+                lap — everything that the S22 was and a little extra.
+                <br /> <br />
+                The S23 Ultra offers a handful of updates and a new main camera
+                sensor. There are no groundbreaking new features. It doesn’t
+                fold in half. Until someone invents radically improved battery
+                technology or holographic displays, that’s just going to be the
+                case for the Ultra for the foreseeable future.
+                <br />
+                The other side of that coin is that the S22 Ultra was already
+                really good, and the S23 Ultra is a little better. Performance —
+                delivered by a custom Snapdragon 8 Gen 2 chipset — is whip fast.
+                The updated camera system is capable of stunning feats. And a
+                couple of small tweaks — the phone’s slightly reshaped side
+                rails and screen — have a big impact on the device’s likability.{" "}
+                <br />
+                That’s all good news. The bad news is that it remains a very
+                expensive device at $1,200, which is a bit more than a $1,099
+                iPhone 14 Pro Max and a big leap from the Pixel 7 Pro’s $899
+                starting price. There are some familiar sore spots with Samsung
+                software, like its insistence on including its own app store in
+                addition to Google’s. And although the camera system can produce
+                stunningly good images, it occasionally makes weird choices and
+                comes up with a photo that’s just downright bad.
+                <br />
+                But if you can stomach the price and the occasional weird photo,
+                then I think you’ll find the S23 Ultra’s maximalism highly
+                rewarding. <br /> <br />
+                <span className="font-bold">THE GOOD:</span> <br />
+                Exceptional performance <br />
+                Versatile cameras with incredible zoom <br />
+                Useful S Pen and connectivity features <br />
+                Lovely boxy frame and high-quality build <br />
+                <br />
+                <span className="font-bold">THE BAD:</span> <br />
+                Expensive <br />
+                Image quality is inconsistent <br />
+                Samsung software remains quirky <br /> <br />
+                Looking at the S22 Ultra and S23 Ultra side by side, you’ll see
+                the slightly different shape on this year’s model — a display
+                with a little less curve at the edges and side rails that are
+                flatter. It doesn’t sound like much, but I think it makes a big
+                difference. It feels much more secure in my fingers every time I
+                pick it up off a table than the curvier S22 Ultra did. I
+                realized I was actually bracing myself for it to slip out of my
+                grasp every time I picked it up, which happened a lot with its
+                predecessor. The S23 Ultra feels more secure as I pick it up but
+                also in my hand as I’m using it, too, which is especially
+                important when you’re writing on it with the S Pen.
+                <br />
+                This slight flattening makes the S23 Ultra look a little boxier
+                than the S22 Ultra, and you know what? I like it. In the cream
+                color especially, it’s kind of late-’80s chic. I don’t know how
+                else to describe it except for fancy. It feels worthy of a high
+                price tag.
               </p>
             </div>
+            <button className=" text-red-600 font-semibold text-lg">{price}</button>
             <div className="text-center py-10">
               <button
                 onClick={handleAddProduct}
@@ -103,7 +128,7 @@ const GalaxyS23Details = ({ product, data, setData }) => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default GalaxyS23Details;

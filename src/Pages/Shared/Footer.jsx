@@ -4,14 +4,18 @@ import { FaTwitter, FaYoutube, FaFacebook } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer px-10 items-center p-4 bg-red-600 text-white">
-        <aside className="items-center grid-flow-col">
-          <NavLink to="/" className="text-3xl font-semibold">
-          Techno & Electro
-          </NavLink>
-          <p className="text-md font-semibold">Copyright © 2023 - All right reserved</p>
-        </aside>
-        <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+      <footer className="md:flex md:justify-between px-10 items-center p-4 bg-red-600 text-white">
+        <div className="md:flex space-x-5 items-center text-center md:text-start pb-5 md:pb-0">
+          <aside className="items-center grid-flow-col pb-3 md:pb-0">
+            <NavLink to="/" className="text-3xl font-semibold">
+              Techno & Electro
+            </NavLink>
+          </aside>
+          <p className="text-md font-semibold">
+            Copyright © 2023 - All right reserved
+          </p>
+        </div>
+        <nav className="flex justify-center gap-4 md:place-self-center md:justify-self-end">
           <Link to="https://www.twitter.com/" className="text-2xl">
             <FaTwitter></FaTwitter>
           </Link>

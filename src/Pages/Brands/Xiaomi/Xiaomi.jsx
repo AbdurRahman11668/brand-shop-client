@@ -68,7 +68,7 @@ const Xiaomi = () => {
         </div>
       </div>
       
-      <div className="my-10 md:px-20">
+      <div className="my-10 px-10 md:px-20">
         <h1 className="text-5xl font-bold text-center mb-5 text-red-600">
         Xiaomi Products
         </h1>

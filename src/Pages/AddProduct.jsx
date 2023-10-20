@@ -45,14 +45,14 @@ const AddProduct = () => {
   };
   return (
     <div className="bg-[#f4f4f0] px-24 py-10 ">
-      <div className="w-2/3 mx-auto">
+      <div className="md:w-2/3 mx-auto">
         <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-10">
           Add Product
         </h2>
         <form className="" onSubmit={handleAddProduct}>
           {/* Form name & brand name row */}
-          <div className="flex mb-8">
-            <div className="form-control md:w-1/2">
+          <div className="md:flex mb-8">
+            <div className="form-control md:w-1/2 mb-5 md:mb-0">
               <label className="label">
                 <span className="label-text font-bold">Product Name</span>
               </label>
@@ -65,7 +65,7 @@ const AddProduct = () => {
                 />
               </label>
             </div>
-            <div className="form-control md:w-1/2 ml-4">
+            <div className="form-control md:w-1/2 md:ml-4">
               <label className="label">
                 <span className="label-text font-bold">Brand Name</span>
               </label>
@@ -81,9 +81,9 @@ const AddProduct = () => {
           </div>
 
           {/* Form Description & Rating row  */}
-          <div className="flex mb-8 ">
+          <div className="md:flex mb-8 ">
             <div className="form-control md:w-1/2">
-              <div className="form-control w-full">
+              <div className="form-control w-full mb-5 md:mb-0">
                 <label className="label">
                   <span className="label-text font-bold">Description</span>
                 </label>
@@ -117,8 +117,8 @@ const AddProduct = () => {
             </div>
           </div>
           {/* Form type & price row  */}
-          <div className="flex mb-8 ">
-            <div className="form-control md:w-1/2">
+          <div className="md:flex mb-8 ">
+            <div className="form-control md:w-1/2 mb-5 md:mb-0">
               <label className="label">
                 <span className="label-text font-bold">Type</span>
               </label>

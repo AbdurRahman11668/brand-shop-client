@@ -43,7 +43,7 @@ const Pixel8ProDetails = ({ product, data, setData }) => {
       <div key={_id}>
         <div className="pb-10 px-20">
           <div className="w-full">
-            <img className="w-2/3 mx-auto" src={image} alt="" />
+            <img className="md:w-2/3 mx-auto" src={image} alt="" />
           </div>
           <div>
             <h3 className="text-center text-red-600 font-bold text-4xl">
@@ -51,45 +51,36 @@ const Pixel8ProDetails = ({ product, data, setData }) => {
             </h3>
             <div className="pt-10 space-y-5">
               <p className="text-gray-600 text-lg font-medium">
-                M1 chip offers a performance boost. Front-facing camera comes
-                with Center Stage. 5G connectivity (sub-6 only). Solid battery
-                life. Same price as the iPad Air 2020.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The 2022 iPad Air sports nearly the same bezel-free design, a
-                10.9-inch display with 500 nits of brightness, a Touch ID top
-                button, USB-C port, 12-megapixel rear camera, and an array of
-                vibrant colors. And while repetition is typically prone to
-                criticism, the iPad Air’s redesign is still fresh enough that
-                this new Air doesn't feel boring. The colorful tablet has a
-                sleek look that begs to be carried around without a case.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                But if you do want to use a case for additional protection,
-                Apple's proprietary smart connector on the back allows you to
-                magnetically attach the iPad to Apple's Smart Keyboard, Smart
-                Folio, and Magic Keyboard. And since the new iPad Air has the
-                exact same dimensions as the 2020 version, you won't have to buy
-                new accessories if you're upgrading.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                It's also worth noting that if you want to get the most out of
-                your slim new computer and enjoy the complete iPad Air
-                experience, you'll have to splurge for the Magic Keyboard ($299)
-                and second-generation Apple Pencil ($129). Adding those things
-                to the $599 64-GB iPad Air brings your total to $1,028.
-                Meanwhile, the M1-powered MacBook Air starts at $999. So you
-                might want to look into third-party accessories.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The iPad Air comes with 5G connectivity. It doesn't have support
-                for the faster millimeter-wave 5G service, but it supports the
-                more prevalent sub-6 5G networks, which give you a slight speed
-                boost over LTE. To get the 5G connectivity you will of course
-                have to purchase the cellular model of the iPad Air, which
-                starts at $749. On top of that, you'll need a cellular plan.{" "}
+              Google’s pitch for the Pixel phone in recent years has centered on how smart the phone is — that it’s one step ahead of you and can help take some of the pain out of your daily chores. The Pixel 6 and 7 didn’t quite live up to that vision, but these Pixel 8 devices feel like the first phones that could turn the sales pitch into a reality.
+ <br /> <br />
+
+Right now, they’re better phones than their predecessors in some appreciable ways. And the potential of these devices is more compelling — the trouble is, Google is asking for a lot of your trust to get there.
+ <br /> <br />
+
+The Pixel 8 and 8 Pro are better phones than their predecessors, but they’re also more expensive. They each see a $100 price hike, which puts the Pixel 8 at $699 and the Pixel 8 Pro at $999. Gone are the days of the standard Pixel passing as an upper-tier midrange phone — it’s all flagship, baby. <br /> <br />
+<span className="font-bold">Pros:</span> <br />
+Handy manual camera controls <br />
+Seven years of OS upgrades promised <br />
+Useful, if troubling, AI photo editing tools <br />
+Face Unlock now works for payments <br /> <br />
+<span className="font-bold">Cos:</span><br />
+Gimmicky temperature sensor <br />
+Tensor G3 still runs hot occasionally <br /> <br />
+
+On the other side of the equation, you’ll also get more years out of the devices, in theory. They’re both slated to receive seven years of software updates — and not just security patches. Google is committing to seven years of OS platform upgrades for these phones, which is a major improvement over the three OS updates the Pixel 6 and 7 were promised. It’s one of the best software support policies on any phone, and that, frankly, rules. <br /> <br />
+
+There are more features coming. The Pixel 8 Pro will get a couple of potentially powerful photo and video editing tools in December 2023. And both phones will be eligible for Assistant with Bard when it’s available for testing in the near future. If it’s effective, the addition of Bard’s generative AI capabilities could totally transform Google Assistant from a tiny repeating machine into a true assistant.  <br /> <br />
+
+But these are all ifs and coulds and promises. Even if you’re cool entrusting Google with the amount of data you need to reap the benefits of all these tools, there’s no guarantee they’ll last: this is the company that promised Pixel Pass subscribers easy device upgrades every two years and then canceled the program just shy of the two-year mark. It has a good track record with promised Pixel software updates, but you can’t blame anyone for giving any Google claim a skeptical eye.
+ <br /> <br />
+In the meantime, the Pixel 8 and 8 Pro contain some small but important upgrades over the previous models. The standard Pixel 8 finally gets a 120Hz refresh rate display. On both phones, you can, at last, use Face Unlock for payments and password managers — also important to the passwordless passkey future Google is working toward. The device’s interpretation of natural language is better, and it makes voice typing a much handier tool. And there’s a suite of new AI-infused image and video editing tools that will make you question the very nature of “truth” in photography. Icky? A little bit, but speaking as a parent who takes lots of pictures of their toddler, they’re great. <br /> <br /> 
+
+Both phones get a display update this year, but the Pixel 8’s is most notable: a jump from a 90Hz screen to a 120Hz maximum refresh rate. Google calls this an “Actua” display; the Pixel 8 Pro has a “Super Actua” screen with a variable refresh rate from 120Hz down to 1Hz to maximize power efficiency. The Pixel 8’s top refresh rate is off by default, so you’ll need to enable it in the settings menu. You should because it’s noticeably smoother.
+ <br /><br />
+Both screens get a little brighter this time around, too. The Pixel 8 will go up to 2,000 nits in high brightness mode, and the 8 Pro reaches an impressive 2,400 nits — that’s compared to 1,400 and 1,500 nits on the Pixel 7 and 7 Pro, respectively. And it’s great! Until the device gets too hot and dims again. Using the Pixel 8 Pro on a hot day in direct sun, I saw it reach its peak brightness for just a few minutes before it ramped back down. The display was still usable even at the lower brightness, but don’t count on being able to access that highest brightness setting for too long in hot conditions.
               </p>
             </div>
+            <button className=" text-red-600 font-semibold text-lg">{price}</button>
             <div className="text-center py-10">
               <button
                 onClick={handleAddProduct}

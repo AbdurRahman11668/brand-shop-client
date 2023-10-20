@@ -44,7 +44,7 @@ const MacbookAirDetails = ({ product, data, setData }) => {
       <div key={_id}>
         <div className="pb-10 px-20">
           <div className="w-full">
-            <img className="w-2/3 mx-auto" src={image} alt="" />
+            <img className="w-full md:w-2/3 mx-auto" src={image} alt="" />
           </div>
           <div>
             <h3 className="text-center text-red-600 font-bold text-4xl">
@@ -52,45 +52,24 @@ const MacbookAirDetails = ({ product, data, setData }) => {
             </h3>
             <div className="pt-10 space-y-5">
               <p className="text-gray-600 text-lg font-medium">
-                M1 chip offers a performance boost. Front-facing camera comes
-                with Center Stage. 5G connectivity (sub-6 only). Solid battery
-                life. Same price as the iPad Air 2020.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The 2022 iPad Air sports nearly the same bezel-free design, a
-                10.9-inch display with 500 nits of brightness, a Touch ID top
-                button, USB-C port, 12-megapixel rear camera, and an array of
-                vibrant colors. And while repetition is typically prone to
-                criticism, the iPad Air’s redesign is still fresh enough that
-                this new Air doesn't feel boring. The colorful tablet has a
-                sleek look that begs to be carried around without a case.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                But if you do want to use a case for additional protection,
-                Apple's proprietary smart connector on the back allows you to
-                magnetically attach the iPad to Apple's Smart Keyboard, Smart
-                Folio, and Magic Keyboard. And since the new iPad Air has the
-                exact same dimensions as the 2020 version, you won't have to buy
-                new accessories if you're upgrading.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                It's also worth noting that if you want to get the most out of
-                your slim new computer and enjoy the complete iPad Air
-                experience, you'll have to splurge for the Magic Keyboard ($299)
-                and second-generation Apple Pencil ($129). Adding those things
-                to the $599 64-GB iPad Air brings your total to $1,028.
-                Meanwhile, the M1-powered MacBook Air starts at $999. So you
-                might want to look into third-party accessories.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The iPad Air comes with 5G connectivity. It doesn't have support
-                for the faster millimeter-wave 5G service, but it supports the
-                more prevalent sub-6 5G networks, which give you a slight speed
-                boost over LTE. To get the 5G connectivity you will of course
-                have to purchase the cellular model of the iPad Air, which
-                starts at $749. On top of that, you'll need a cellular plan.{" "}
+              Gone are the days of the signature wedge design on the MacBook Air. The new model now has the same boxy chassis as the latest high-end MacBook Pro models, which in my eyes gives it a more sophisticated look. But it's much lighter. At just 2.7 pounds, I tend to lift it with too much force because I'm not used to carrying around such a lightweight machine. (It's thinner and lighter than the 2020 MacBook Air too!)
+<br />
+It might share a similar look, but sadly, you won't get the same connectivity upgrade. The new MacBook Air only has two USB-C ports, a 3.5-mm headphone jack, and—thankfully—a MagSafe port for charging. (No HDMI or SD card slot.) As someone who mainly uses a MacBook for writing, emails, video calls, and Netflix, the lack of ports didn't bother me, but it would have been nice. 
+<br />
+If you're coming from an older Air or 13-inch MacBook Pro, you'll likely most appreciate the new display. Sort of. It's still an LCD panel stuck at 60 Hz, but Apple has bumped the brightness a smidge, and I had zero trouble reading the screen when I worked outside in my backyard. The screen size also goes from 13.3 to 13.6 inches, thanks to slimmer borders around the display. It sounds like a small boost, but I noticed (and appreciated) the larger real estate. Annoyingly, this MacBook can still only connect to one external monitor (a limitation on the M1 MacBook Air as well). Not great if you want to reap the benefits of a multiscreen setup.
+<br />
+Just like on the 14-inch MacBook Pro, there's a notch carved into the center top of the screen, which houses the 1080p webcam, but it doesn't bother me. You can use a dark background to hide it, and it also vanishes when you have an app in full-screen mode. If the notch is what enabled Apple to finally upgrade the webcam, I'm all for it. It's finally 1080p, so I look sharper in my video calls, though I have noticed Apple adds a skin-smoothing effect. 
+<br />
+The Magic Keyboard feels just as good to type on as Apple's other recent laptops (no need to worry about a broken keyboard anymore), but take a closer look and you might notice that the speakers have been removed from each side of the keyboard. Instead, the quad-speaker sound system and three-microphone array are integrated between the keyboard and display. The audio is pretty solid for a laptop, but it can sound muffled at times. <br />
+
+This MacBook is powered by Apple's new M2 chip, which packs an 8-core CPU and up to a 10-core GPU, which is two more than its predecessor for an edge in graphics performance. (The base model comes with an 8-core GPU.) I tested the model with an 8-core CPU, 10-core GPU, and 8 gigabytes of unified memory, which you can also upgrade to 24 gigabytes. 
+<br />
+The M2 is great for most day-to-day tasks, but this isn't the machine to buy if you're frequently editing multiple streams of 4K video or rendering 3D content—stick with the MacBook Pro and the M1 Pro chips instead. On a standard workday, I'd have a few apps open simultaneously, including Slack, Spotify, Messages, and Telegram, plus I'd also have about 15 tabs open on Google Chrome. The MacBook Air ran smoothly.
+<br />
+But it was during hectic days, like covering Prime Day, that I noticed its limitations. Run all of those aforementioned apps and bump the Chrome tab count to 30, and the Air struggles. Scrolling, switching tabs, minimizing and expanding windows—it all felt sluggish. I even saw the dreaded rainbow wheel a few times, which made me conscious about how much I was doing at once. I closed any tabs or apps I didn't need. This experience felt different from the 2020 M1 MacBook Air, which, unless I'm looking through rose-colored glasses, never once presented me with the rainbow wheel.  
               </p>
             </div>
+            <button className=" text-red-600 font-semibold text-lg">{price}</button>
             <div className="text-center py-10">
               <button
                 onClick={handleAddProduct}

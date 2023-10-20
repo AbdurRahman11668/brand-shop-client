@@ -40,17 +40,17 @@ const MyCart = () => {
 
 
   return (
-    <div className="px-24 py-10 mb-10">
+    <div className="px-10 md:px-24 py-10 mb-10">
       <h1 className="text-center text-red-600 font-semibold text-4xl mb-10">
         Cart
       </h1>
-      <div className="grid md:grid-cols-2 gap-10">
+      <div className="grid md:grid-cols-2 gap-5 md:gap-10">
         {datas.map((product) => (
           // <Cart key={data._id} data={data} datas={datas} setDatas={setDatas}></Cart>
-          <div key={product._id}>
-            <div className="flex space-x-5 bg-gray-100  items-center shadow-lg">
+          <div className="" key={product._id}>
+            <div className="md:flex text-center md:text-start space-x-5 bg-gray-100  items-center shadow-lg">
               <div className="">
-                <img src={product.image2} className="w-[330px] rounded" alt="" />
+                <img src={product.image2} className="w-[500px] md:w-[300px] rounded" alt="" />
               </div>
               <div className="space-y-1 py-3">
                 <Link to="http://localhost:5173/apple/6530d093250db7547e920816">
@@ -62,9 +62,9 @@ const MyCart = () => {
                   {product.type2}
                 </p>
                 <p className="text-md pb-3 text-gray-500 font-semibold">
-                  {product.price2}
+                  Price: <span className="text-red-600 font-semibold">{product.price2}</span>
                 </p>
-                <div className="flex space-x-5">
+                <div className="flex justify-center md:justify-start space-x-5">
                   <button className="rounded px-3 text-lg font-semibold text-white bg-red-600 hover:border hover:border-red-600 hover:text-red-600 hover:bg-white">
                     Buy Now
                   </button>

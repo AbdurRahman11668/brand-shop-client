@@ -48,7 +48,7 @@ const CurvedMonitorDetails = ({ product, data, setData }) => {
       <div key={_id}>
         <div className="pb-10 px-20">
           <div className="w-full">
-            <img className="w-2/3 mx-auto" src={image} alt="" />
+            <img className="md:w-2/3 mx-auto" src={image} alt="" />
           </div>
           <div>
             <h3 className="text-center text-red-600 font-bold text-4xl">
@@ -56,44 +56,21 @@ const CurvedMonitorDetails = ({ product, data, setData }) => {
             </h3>
             <div className="pt-10 space-y-5">
               <p className="text-gray-600 text-lg font-medium">
-                M1 chip offers a performance boost. Front-facing camera comes
-                with Center Stage. 5G connectivity (sub-6 only). Solid battery
-                life. Same price as the iPad Air 2020.
+              Curved screen <br />
+Great sRGB color coverage <br />
+Bright for a budget monitor <br />
+Mini-joystick controller <br />
+Panel Size (Corner-to-Corner):	23.5 inches <br />
+Native Resolution:	1920 by 1080 <br />
+Aspect Ratio:	16:9 <br />
+Low priced and versatile, the Samsung 24-Inch CF396 Curved LED Monitor ($149.99) would be at home in an office, a study, a living room, or a game room. It provides some convenience features that are usually limited to costlier monitors. And our testing showed the panel to be bright, with excellent color coverage for a monitor of its price. The CF396 offers enough value to make it a strong PCMag Editors' Choice award winner for budget curved monitors.
+<br />
+The glossy black CF396 is lightweight and fairly compact, measuring 16.7 by 21.6 by 8.6 inches (HWD) and weighing 6.8 pounds. All four bezels are chunky, nearly half an inch thick. The monitor rests on a V-shaped base that connects to the cabinet by a shaft that angles upward from the back.
+<br />
+The CF396's 23.5-inch vertical alignment (VA) screen supports a native resolution of 1,920 by 1,080 pixels (1080p), at a 16:9 widescreen aspect ratio. VA panels offer high contrast ratios, thanks to their ability to render deep blacks, as well as wide viewing angles. The CF396 is rated at 178 degrees for both vertical and horizontal angles, meaning that you can view the screen from off to the side, or from above and below, with minimal color shift or distortion.
+
               </p>
-              <p className="text-gray-600 font-medium">
-                The 2022 iPad Air sports nearly the same bezel-free design, a
-                10.9-inch display with 500 nits of brightness, a Touch ID top
-                button, USB-C port, 12-megapixel rear camera, and an array of
-                vibrant colors. And while repetition is typically prone to
-                criticism, the iPad Air’s redesign is still fresh enough that
-                this new Air doesn't feel boring. The colorful tablet has a
-                sleek look that begs to be carried around without a case.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                But if you do want to use a case for additional protection,
-                Apple's proprietary smart connector on the back allows you to
-                magnetically attach the iPad to Apple's Smart Keyboard, Smart
-                Folio, and Magic Keyboard. And since the new iPad Air has the
-                exact same dimensions as the 2020 version, you won't have to buy
-                new accessories if you're upgrading.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                It's also worth noting that if you want to get the most out of
-                your slim new computer and enjoy the complete iPad Air
-                experience, you'll have to splurge for the Magic Keyboard ($299)
-                and second-generation Apple Pencil ($129). Adding those things
-                to the $599 64-GB iPad Air brings your total to $1,028.
-                Meanwhile, the M1-powered MacBook Air starts at $999. So you
-                might want to look into third-party accessories.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The iPad Air comes with 5G connectivity. It doesn't have support
-                for the faster millimeter-wave 5G service, but it supports the
-                more prevalent sub-6 5G networks, which give you a slight speed
-                boost over LTE. To get the 5G connectivity you will of course
-                have to purchase the cellular model of the iPad Air, which
-                starts at $749. On top of that, you'll need a cellular plan.{" "}
-              </p>
+            <button className=" text-red-600 font-semibold text-lg">{price}</button>
             </div>
             <div className="text-center py-10">
               <button

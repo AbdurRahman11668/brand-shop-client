@@ -43,7 +43,7 @@ const AppleIpadAirdetails = ({ product, data, setData }) => {
       <div key={_id}>
         <div className="pb-10 px-20">
           <div className="w-full">
-            <img className="w-2/3 mx-auto" src={image} alt="" />
+            <img className="w-full md:w-2/3 mx-auto" src={image} alt="" />
           </div>
           <div>
             <h3 className="text-center text-red-600 font-bold text-4xl">
@@ -90,6 +90,7 @@ const AppleIpadAirdetails = ({ product, data, setData }) => {
                 starts at $749. On top of that, you'll need a cellular plan.{" "}
               </p>
             </div>
+            <button className=" text-red-600 font-semibold text-lg">{price}</button>
             <div className="text-center py-10">
               <button
                 onClick={handleAddProduct}

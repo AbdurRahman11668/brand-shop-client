@@ -7,7 +7,7 @@ const PixelBuds = () => {
   
     const [data, setData] = useState(loadedAppleData)
   
-    const filteredData = data.filter((item) => item.type === "Headphones" && item.brand === "Google");
+    const filteredData = data.filter((item) => item.type === "Headphones" && item.brand === "Google" && item.name === "Google Pixel Buds");
     return (
         <div>
             {filteredData.map((product) => (

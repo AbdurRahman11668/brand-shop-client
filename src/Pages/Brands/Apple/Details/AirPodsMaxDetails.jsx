@@ -49,7 +49,7 @@ const AirPodsMaxDetails = ({ product, data, setData }) => {
       <div key={_id}>
         <div className="pb-10 px-20">
           <div className="w-full">
-            <img className="w-2/3 mx-auto" src={image} alt="" />
+            <img className="w-full md:w-2/3 mx-auto" src={image} alt="" />
           </div>
           <div>
             <h3 className="text-center text-red-600 font-bold text-4xl">
@@ -57,22 +57,19 @@ const AirPodsMaxDetails = ({ product, data, setData }) => {
             </h3>
             <div className="pt-10 space-y-5">
               <p className="text-gray-600 text-lg font-medium">
-                Apple’s latest, most expensive superphone is a big step forward
-                for the iPhone. But despite a powerful new camera and USB-C
-                port, the best feature is simply its lighter weight. <br /> That is
-                because Apple’s 6.7in iPhones have always been beasts in price
-                and weight. But while this new iPhone 15 Pro Max is still
-                wallet-crushingly expensive, starting at £1,199
-                (€1,449/$1,199/A$2,199), it is at least 19g lighter, making a
-                huge difference in your hand and pockets. <br /> The new Max has
-                titanium sides rather than stainless steel, which saves the 19g
-                but also shifts the balance of the phone towards its centre,
-                making it feel lighter than it is. The design otherwise sticks
-                closely to that introduced with the iPhone 12 Pro Max in 2020,
-                with just a little bit of softening around the edges and slimmer
-                bezels around the screen.
+              While the Apple AirPod Max is a great pair of headphones with best-in-class active noise canceling (ANC) and a good sound signature, it also has a few annoying quirks that make it very obviously an Apple product. If you live in the Apple ecosystem and already love your AirPods Pro, then the AirPods Max is more of the same just in a pair of over-ears.
+              <br />
+              Nice design and solid build quality <br />
+Amazing active noise canceling and transparency mode <br />
+Comfortable ear pads and fabric headband <br />
+Decent battery life <br />
+Button and digital crown are great to use <br />
+Good sound quality with no distortion <br />
+Great connection strength with Bluetooth 5.0 <br />
+Ever since acquiring Beats by Dre for an ungodly amount of money in 2014, it’s been obvious Apple has its eye on the consumer audio space. The original AirPods was a hit despite being terrible, and the AirPods Pro is actually among the best true wireless earbuds you can get. So when Apple announced its long-awaited over-ears, the AirPods Max, we were excited but skeptical.
               </p>
             </div>
+            <button className=" text-red-600 font-semibold text-lg">{price}</button>
             <div className="text-center py-10">
               <button
                 onClick={handleAddProduct}

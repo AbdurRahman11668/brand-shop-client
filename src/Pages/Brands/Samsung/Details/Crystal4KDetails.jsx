@@ -43,7 +43,7 @@ const Crystal4KDetails = ({ product, data, setData }) => {
       <div key={_id}>
         <div className="pb-10 px-20">
           <div className="w-full">
-            <img className="w-2/3 mx-auto" src={image} alt="" />
+            <img className="md:w-2/3 mx-auto" src={image} alt="" />
           </div>
           <div>
             <h3 className="text-center text-red-600 font-bold text-4xl">
@@ -51,45 +51,15 @@ const Crystal4KDetails = ({ product, data, setData }) => {
             </h3>
             <div className="pt-10 space-y-5">
               <p className="text-gray-600 text-lg font-medium">
-                M1 chip offers a performance boost. Front-facing camera comes
-                with Center Stage. 5G connectivity (sub-6 only). Solid battery
-                life. Same price as the iPad Air 2020.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The 2022 iPad Air sports nearly the same bezel-free design, a
-                10.9-inch display with 500 nits of brightness, a Touch ID top
-                button, USB-C port, 12-megapixel rear camera, and an array of
-                vibrant colors. And while repetition is typically prone to
-                criticism, the iPad Air’s redesign is still fresh enough that
-                this new Air doesn't feel boring. The colorful tablet has a
-                sleek look that begs to be carried around without a case.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                But if you do want to use a case for additional protection,
-                Apple's proprietary smart connector on the back allows you to
-                magnetically attach the iPad to Apple's Smart Keyboard, Smart
-                Folio, and Magic Keyboard. And since the new iPad Air has the
-                exact same dimensions as the 2020 version, you won't have to buy
-                new accessories if you're upgrading.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                It's also worth noting that if you want to get the most out of
-                your slim new computer and enjoy the complete iPad Air
-                experience, you'll have to splurge for the Magic Keyboard ($299)
-                and second-generation Apple Pencil ($129). Adding those things
-                to the $599 64-GB iPad Air brings your total to $1,028.
-                Meanwhile, the M1-powered MacBook Air starts at $999. So you
-                might want to look into third-party accessories.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The iPad Air comes with 5G connectivity. It doesn't have support
-                for the faster millimeter-wave 5G service, but it supports the
-                more prevalent sub-6 5G networks, which give you a slight speed
-                boost over LTE. To get the 5G connectivity you will of course
-                have to purchase the cellular model of the iPad Air, which
-                starts at $749. On top of that, you'll need a cellular plan.{" "}
+              The Samsung CU8000 is one of the entry-level models in Samsung's 2023 lineup, replacing the Samsung AU8000 in North America. It's part of Samsung's Crystal UHD series of TVs, sitting above the Samsung CU7000/CU7000D and below Samsung's QLED lineup, starting with the Samsung Q60C QLED. It competes with other entry-level models like the Sony X80K/X80CK and LG UQ8000. It's a simple model that lacks features like variable refresh rate (VRR) and HDMI 2.1 support, except on its 85-inch screen size. It uses Samsung's Crystal Processor 4K, first introduced in 2020 and designed to provide powerful 4K upscaling. It runs a simplified version of Samsung's 2023 Tizen OS interface, which offers most of the features of more advanced models but with a reduced feature set meant to run smoothly on this entry-level TV. It comes with the same great remote as more expensive models, like the Samsung S95C, and it supports voice controls to make it easy to find your favorite content. <br /> <br />
+
+              Overall, the Samsung CU8000 is a very decent performer. It's best for watching movies in a dark room, as it has a wide color gamut that tends to lean towards showing dark, saturated images. It's also somewhat good for HDR content due to its wide color gamut, but it doesn't get nearly bright enough for highlights to stand out, and it doesn't have local dimming features to help. Plus, it has poor reflection handling, so it's not a great bright room TV. It also has a bad response time, which is good for reducing stutter in movies, but as it introduces motion blur, it isn't optimal for sports, PC monitor use, or gaming.
+              <br />
+              <br />
+              Great low-quality content smoothing.
               </p>
             </div>
+            <button className=" text-red-600 font-semibold text-lg">{price}</button>
             <div className="text-center py-10">
               <button
                 onClick={handleAddProduct}

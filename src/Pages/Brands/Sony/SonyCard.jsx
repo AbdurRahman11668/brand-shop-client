@@ -6,22 +6,22 @@ const SonyCard = ({ product}) => {
 
     const ratings = 0;
     return (
-        <div className="">
+        <div className="text-center md:text-start">
       <div className="">
-        <div className="card-side bg-gray-100 shadow-md h-[580px] px-10 rounded-lg">
+        <div className="card-side bg-gray-100 shadow-md pb-10 px-10 rounded-lg">
           <figure className="w-full py-5">
-            <img className="w-2/3 mx-auto" src={image} alt="Movie" />
+            <img className="md:w-2/3 mx-auto" src={image} alt="Movie" />
           </figure>
-          <div className="flex justify-between w-full pr-5">
+          <div className="flex w-full pr-5">
             <div className="space-y-2">
-              <h2 className="card-title text-red-600 text-2xl font-bold">
+              <h2 className=" text-red-600 text-2xl font-bold">
                 {name}
               </h2>
               <p className="text-xl font-semibold">{brand}</p>
               <p className="text-lg font-semibold">
                 Type: <span className="text-red-700">{type}</span>
               </p>
-              <div className="flex space-x-1">
+              <div className="flex justify-center md:justify-start space-x-1">
                 {Array.from({ length: rating }).map((_, index) => (
                   <FaStar
                     key={index}
@@ -34,8 +34,7 @@ const SonyCard = ({ product}) => {
                 {description}
               </p>
               <p className="text-md font-semibold text-gray-600 pb-2">
-                {price}
-              </p>
+               Price: <span className="text-red-700">{price}</span></p>
               <div className="space-x-10">
                 <Link to={`/sony/${_id}`}>
                   <button className="text-lg px-5 font-semibold btn bg-red-600 text-white hover:border-red-600 hover:text-red-600">

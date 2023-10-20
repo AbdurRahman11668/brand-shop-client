@@ -14,23 +14,23 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink to="/" className='hover:bg-red-600 hover:text-white text-red-600'>Home</NavLink>
+        <NavLink to="/" className='hover:bg-red-600 text-[16px] hover:text-white text-red-600'>Home</NavLink>
       </li>
       {
         user && <>
           <li>
-          <NavLink to="/addproduct" className='hover:bg-red-600 hover:text-white'>Add Product</NavLink>
+          <NavLink to="/addproduct" className='hover:bg-red-600 text-[16px] hover:text-white'>Add Product</NavLink>
           </li>
         </>
       }
       <li>
-        <NavLink to="/login" className='hover:bg-red-600 hover:text-white'>Login</NavLink>
+        <NavLink to="/login" className='hover:bg-red-600 text-[16px] hover:text-white'>Login</NavLink>
       </li>
       <li>
-        <NavLink to="/register" className='hover:bg-red-600 hover:text-white'>Register</NavLink>
+        <NavLink to="/register" className='hover:bg-red-600 text-[16px] hover:text-white'>Register</NavLink>
       </li>
       <li>
-        <NavLink to="/cart" className='hover:bg-red-600 hover:text-white'><FaCartPlus className="text-lg"></FaCartPlus>Cart</NavLink>
+        <NavLink to="/cart" className='hover:bg-red-600 text-[16px] hover:text-white'><FaCartPlus className="text-lg"></FaCartPlus>Cart</NavLink>
       </li>
     </>
   );
@@ -68,8 +68,8 @@ const Navbar = () => {
       </div>
       <div className="navbar-end justify-center md:justify-start lg:justify-end">
         {user ? <>
-            <img src={user.photoURL} className="w-7 mr-2 rounded-full" alt="" />
-            <a className="text-sm text-red-600 font-medium">{user.email}</a>
+            <img src={user.photoURL} className="w-8 mr-2 rounded-full" alt="" />
+            <a className="text-lg text-red-600 font-medium">{user.providerData[0].displayName}</a>
             <button onClick={handleSignOut} className="btn ml-2 text-red-600 hover:bg-red-600 hover:text-white">
             Sign Out
           </button>

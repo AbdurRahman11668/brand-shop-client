@@ -1,6 +1,6 @@
 import Swal from "sweetalert2";
 const Xiaomi12ProDetails = ({ product, data, setData }) => {
-    const { _id, name, brand, type, rating, description, price, image } = product;
+  const { _id, name, brand, type, rating, description, price, image } = product;
 
   const handleAddProduct = (e) => {
     e.preventDefault();
@@ -14,8 +14,15 @@ const Xiaomi12ProDetails = ({ product, data, setData }) => {
     const price2 = price;
     const image2 = image;
     const allProducts = {
-        id, name2, brand2, type2, rating2, description2, price2, image2
-    }
+      id,
+      name2,
+      brand2,
+      type2,
+      rating2,
+      description2,
+      price2,
+      image2,
+    };
     fetch("http://localhost:5000/cart", {
       method: "POST",
       headers: {
@@ -37,12 +44,12 @@ const Xiaomi12ProDetails = ({ product, data, setData }) => {
       });
   };
 
-    return (
-        <div>
+  return (
+    <div>
       <div key={_id}>
         <div className="pb-10 px-20">
           <div className="w-full">
-            <img className="w-2/3 mx-auto" src={image} alt="" />
+            <img className="md:w-2/3 mx-auto" src={image} alt="" />
           </div>
           <div>
             <h3 className="text-center text-red-600 font-bold text-4xl">
@@ -50,45 +57,57 @@ const Xiaomi12ProDetails = ({ product, data, setData }) => {
             </h3>
             <div className="pt-10 space-y-5">
               <p className="text-gray-600 text-lg font-medium">
-                M1 chip offers a performance boost. Front-facing camera comes
-                with Center Stage. 5G connectivity (sub-6 only). Solid battery
-                life. Same price as the iPad Air 2020.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The 2022 iPad Air sports nearly the same bezel-free design, a
-                10.9-inch display with 500 nits of brightness, a Touch ID top
-                button, USB-C port, 12-megapixel rear camera, and an array of
-                vibrant colors. And while repetition is typically prone to
-                criticism, the iPad Air’s redesign is still fresh enough that
-                this new Air doesn't feel boring. The colorful tablet has a
-                sleek look that begs to be carried around without a case.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                But if you do want to use a case for additional protection,
-                Apple's proprietary smart connector on the back allows you to
-                magnetically attach the iPad to Apple's Smart Keyboard, Smart
-                Folio, and Magic Keyboard. And since the new iPad Air has the
-                exact same dimensions as the 2020 version, you won't have to buy
-                new accessories if you're upgrading.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                It's also worth noting that if you want to get the most out of
-                your slim new computer and enjoy the complete iPad Air
-                experience, you'll have to splurge for the Magic Keyboard ($299)
-                and second-generation Apple Pencil ($129). Adding those things
-                to the $599 64-GB iPad Air brings your total to $1,028.
-                Meanwhile, the M1-powered MacBook Air starts at $999. So you
-                might want to look into third-party accessories.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The iPad Air comes with 5G connectivity. It doesn't have support
-                for the faster millimeter-wave 5G service, but it supports the
-                more prevalent sub-6 5G networks, which give you a slight speed
-                boost over LTE. To get the 5G connectivity you will of course
-                have to purchase the cellular model of the iPad Air, which
-                starts at $749. On top of that, you'll need a cellular plan.{" "}
+                Xiaomi's top of the line, non-folding smartphone for 2022 may be
+                the 12S Ultra, but its highest-end smartphone for 2022 that you
+                can officially purchase outside of China is the 12 Pro. That's
+                an odd situation for sure, and it's even odder still if you
+                consider that the Mi 11 Pro, its predecessor, was confined to
+                the Chinese market last year while the Mi 11 Ultra wasn't. It's
+                really hard to ascertain the logic behind these moves from afar,
+                but as the saying goes - it is what it is.
+                <br /> <br />
+                We were obviously curious to see how the company's international
+                top dog fares if we use it for an extended period of time as our
+                one and only smartphone, and our thoughts following that are
+                laid out in this long-term review of the Xiaomi 12 Pro. This is
+                the model we're talking about because this is the one most
+                people can actually get outside of China, with warranty and all
+                the perks, even though the shadow of the 12S Ultra will never
+                not float around in the back of our minds. <br /> <br />
+                If you look at Xiaomi's current roster, the 12 Pro seems to
+                serve a similar purpose to Samsung's Galaxy S22+, packing
+                high-end specs while not going all-in with everything,
+                especially camera-wise. Does that put it in an awkward position
+                where it's hard to justify getting one, or is it just enough
+                smartphone that you'll be happy with it if having the best
+                camera hardware in your handset isn't a priority for you?
+                <br /> <br />
+                These are some of the things we've set out to discover during
+                our time with the Xiaomi 12 Pro, and if we could spoil our
+                conclusions just a little bit, we'll say there are definitely a
+                lot of things to love about this device, but there are also some
+                issues, some more baffling than others. If that intrigues you,
+                then join us over the next pages of this review as we explore
+                what it's like to live with the Xiaomi 12 Pro day-in, day-out,
+                in the second half of 2022. <br /> <br />
+                Looking at it from the front, you'll definitely place the Xiaomi
+                12 Pro in the 'high-end Android phone, 2020-2022' mental
+                category - and instantly so. The curved sides of the screen give
+                away the fact that this most likely isn't a mid-ranger, while
+                the small bezels all-round solidify the feeling that you're
+                looking at a premium offering. So far so good, then. <br />{" "}
+                <br />
+                Turn it over and you're treated to one of the most beautiful
+                camera islands to appear in the past few years, in this
+                reviewer's obviously subjective opinion. It's still an entire
+                slab of glass and metal that looks like it's sitting on top of
+                the phone's back, and so in a way it's still an eyesore because
+                it breaks it up, literally as it were, but it's rather pretty to
+                look at with its etched metal and subtle dividing lines between
+                the various sensors and the flash.
               </p>
             </div>
+            <button className=" text-red-600 font-semibold text-lg">{price}</button>
             <div className="text-center py-10">
               <button
                 onClick={handleAddProduct}
@@ -101,7 +120,7 @@ const Xiaomi12ProDetails = ({ product, data, setData }) => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default Xiaomi12ProDetails;

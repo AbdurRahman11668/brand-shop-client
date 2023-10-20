@@ -59,7 +59,7 @@ const Register = () => {
   };
 
   return (
-    <div className="mb-10">
+    <div className="mb-10 px-10 md:px-0">
       <div className="">
         <h2 className="text-3xl my-5 text-center font-semibold">
           Please Register

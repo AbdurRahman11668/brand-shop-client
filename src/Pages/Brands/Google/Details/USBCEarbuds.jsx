@@ -7,7 +7,7 @@ const USBCEarbuds = () => {
   
     const [data, setData] = useState(loadedAppleData)
   
-    const filteredData = data.filter((item) => item.type === "Headphones" && item.brand === "Google");
+    const filteredData = data.filter((item) => item.type === "Headphones" && item.brand === "Google" && item.name === "Pixel USB-C Earbuds");
     return (
         <div>
             {filteredData.map((product) => (

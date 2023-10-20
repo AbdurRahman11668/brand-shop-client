@@ -42,7 +42,7 @@ const PixelBudsDetails = ({ product, data, setData }) => {
       <div key={_id}>
         <div className="pb-10 px-20">
           <div className="w-full">
-            <img className="w-2/3 mx-auto" src={image} alt="" />
+            <img className="md:w-2/3 mx-auto" src={image} alt="" />
           </div>
           <div>
             <h3 className="text-center text-red-600 font-bold text-4xl">
@@ -50,45 +50,26 @@ const PixelBudsDetails = ({ product, data, setData }) => {
             </h3>
             <div className="pt-10 space-y-5">
               <p className="text-gray-600 text-lg font-medium">
-                M1 chip offers a performance boost. Front-facing camera comes
-                with Center Stage. 5G connectivity (sub-6 only). Solid battery
-                life. Same price as the iPad Air 2020.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The 2022 iPad Air sports nearly the same bezel-free design, a
-                10.9-inch display with 500 nits of brightness, a Touch ID top
-                button, USB-C port, 12-megapixel rear camera, and an array of
-                vibrant colors. And while repetition is typically prone to
-                criticism, the iPad Air’s redesign is still fresh enough that
-                this new Air doesn't feel boring. The colorful tablet has a
-                sleek look that begs to be carried around without a case.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                But if you do want to use a case for additional protection,
-                Apple's proprietary smart connector on the back allows you to
-                magnetically attach the iPad to Apple's Smart Keyboard, Smart
-                Folio, and Magic Keyboard. And since the new iPad Air has the
-                exact same dimensions as the 2020 version, you won't have to buy
-                new accessories if you're upgrading.{" "}
-              </p>
-              <p className="text-gray-600 font-medium">
-                It's also worth noting that if you want to get the most out of
-                your slim new computer and enjoy the complete iPad Air
-                experience, you'll have to splurge for the Magic Keyboard ($299)
-                and second-generation Apple Pencil ($129). Adding those things
-                to the $599 64-GB iPad Air brings your total to $1,028.
-                Meanwhile, the M1-powered MacBook Air starts at $999. So you
-                might want to look into third-party accessories.
-              </p>
-              <p className="text-gray-600 font-medium">
-                The iPad Air comes with 5G connectivity. It doesn't have support
-                for the faster millimeter-wave 5G service, but it supports the
-                more prevalent sub-6 5G networks, which give you a slight speed
-                boost over LTE. To get the 5G connectivity you will of course
-                have to purchase the cellular model of the iPad Air, which
-                starts at $749. On top of that, you'll need a cellular plan.{" "}
+              It wasn’t a sure thing that the Pixel Buds Pro would turn out to be good. Google has had a mixed, inconsistent track record with wireless earbuds so far. The original Pixel Buds in 2017 had such an unconventional design that something as fundamental as putting them back into the case was overly complicated. The Pixel Buds 2 moved to a much sleeker, true wireless form factor, but they were beset with connectivity issues and frequent audio dropouts. Google righted the ship with the low-end $99 Pixel Buds A-Series last year, but now all eyes are on the new, flagship $199 Pixel Buds Pro — the company’s first earbuds with active noise cancellation — to see whether Google can really hang with the very best from Apple, Sony, Samsung, and others. <br /> <br />
+
+Turns out, it very much can. The Pixel Buds Pro fully resolve the Bluetooth woes of the second-gen model while delivering improved sound quality, longer battery life, satisfactory noise cancellation, and bonus convenience features like multipoint. They’re not the smallest or lightest earbuds around, but Google’s elimination of the integrated wing tips (or “stabilizer arcs”) from prior models results in better overall comfort. <br /> <br />
+<span className="font-bold">Pros:</span> <br />
+Good active noise cancellation <br />
+Improved sound and lengthy battery life <br />
+Multipoint support <br />
+No more frequent audio dropouts <br />
+<span className="font-bold">Cos:</span><br />
+Transparency mode isn’t as good as it could be <br />
+No support for advanced Bluetooth codecs <br />
+Audio fidelity falls short of the very best earbuds <br />
+Mic quality could still use some work  <br />
+
+When Google announced these earbuds a couple months ago, it made a point to call out the custom silicon and in-house audio processing that were key to developing the Pixel Buds Pro. Every company with earbuds that are the best at something — think noise cancellation in the case of Sony or transparency mode for Apple — builds its own components to achieve that. According to Google, the Pixel Buds Pro include a custom six-core audio chip (not to be confused with the custom Tensor chip in Pixel phones) that powers the active noise cancellation system, and they also use custom 11-millimeter drivers / speakers tuned by the company’s audio team. 
+<br /> <br />
+So then, let’s get right to it: noise cancellation on the Pixel Buds Pro is generally quite good for subduing noise at home, the office, or in a coffee shop. But I do notice that some parts of the frequency spectrum (like street noise from passing cars) cut through louder than they would on the AirPods Pro or Sony’s WF-1000XM4 buds. Since the ANC runs on Google-developed algorithms, it’s feasible that firmware updates could further enhance the noise-canceling strength of the Buds Pro. As it stands today, the ANC is more than competent — even if it won’t be bumping Sony or Bose from the top of the mountain.
               </p>
             </div>
+            <button className=" text-red-600 font-semibold text-lg">{price}</button>
             <div className="text-center py-10">
               <button
                 onClick={handleAddProduct}
