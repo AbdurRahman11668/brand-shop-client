@@ -1,6 +1,8 @@
+
 import { Link } from "react-router-dom";
 
 const BrandItems = () => {
+
   return (
     <div className="px-20 py-10">
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-16 flex-wrap items-center py-5 justify-center">

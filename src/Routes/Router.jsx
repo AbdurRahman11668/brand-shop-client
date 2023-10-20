@@ -5,7 +5,7 @@ import Home from "../Pages/Home";
 import PrivateRoute from "./PrivateRoute";
 import Login from "../pages/Login";
 import Register from "../Pages/Register";
-import MyCart from "../Pages/MyCart";
+import MyCart from "../Pages/MyCart/MyCart";
 import AddProduct from "../Pages/AddProduct";
 import Apple from "../Pages/Brands/Apple/Apple";
 import Samsung from "../Pages/Brands/Samsung/Samsung";
@@ -13,6 +13,8 @@ import Sony from "../Pages/Brands/Sony/Sony";
 import Xiaomi from "../Pages/Brands/Xiaomi/Xiaomi";
 import Microsoft from "../Pages/Brands/Microsoft/Microsoft";
 import Google from "../Pages/Brands/Google/Google";
+import UpdateProducts from "../Pages/UpdateProducts";
+import AppleIpadAir from "../Pages/Brands/Apple/Details/AppleIpadAir";
 
 const router = createBrowserRouter([
   {
@@ -32,11 +34,11 @@ const router = createBrowserRouter([
             <AddProduct></AddProduct>
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/products")
+        loader: () => fetch("http://localhost:5000/products"),
       },
       {
         path: "/login",
-        element: <Login></Login>
+        element: <Login></Login>,
       },
       {
         path: "/register",
@@ -45,6 +47,7 @@ const router = createBrowserRouter([
       {
         path: "/apple",
         element: <Apple></Apple>,
+        loader: () => fetch("http://localhost:5000/products"),
       },
       {
         path: "/samsung",
@@ -67,8 +70,28 @@ const router = createBrowserRouter([
         element: <Google></Google>,
       },
       {
+        path: "/apple/updateproducts/:id",
+        element: <UpdateProducts></UpdateProducts>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/products/${params.id}`),
+      },
+      {
         path: "/cart",
-        element: <MyCart></MyCart>,
+        element: (
+          <PrivateRoute>
+            <MyCart></MyCart>
+          </PrivateRoute>
+        ),
+        loader: () => fetch("http://localhost:5000/cart"),
+      },
+      {
+        path: "/apple/6530d093250db7547e920816",
+        element: (
+          <PrivateRoute>
+            <AppleIpadAir></AppleIpadAir>
+          </PrivateRoute>
+        ),
+        loader: () => fetch("http://localhost:5000/products"),
       },
     ],
   },

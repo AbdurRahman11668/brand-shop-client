@@ -1,6 +1,13 @@
+import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
-const AddProduct = () => {
-  const handleAddProduct = (event) => {
+
+const UpdateProducts = () => {
+  const products = useLoaderData();
+  const { _id, name, brand, type, rating, description, price, image } =
+    products;
+  //   console.log(newProduct);
+
+  const handleUpdateProduct = (event) => {
     event.preventDefault();
 
     const form = event.target;
@@ -12,7 +19,7 @@ const AddProduct = () => {
     const price = form.price.value;
     const image = form.image.value;
 
-    const newProduct = {
+    const updatedProduct = {
       name,
       brand,
       type,
@@ -21,35 +28,35 @@ const AddProduct = () => {
       price,
       image,
     };
-    console.log(newProduct);
-
-    fetch("http://localhost:5000/products", {
-      method: "POST",
+    console.log(updatedProduct);
+    fetch(`http://localhost:5000/products/${_id}`, {
+      method: "PUT",
       headers: {
         "content-type": "application/json",
       },
-      body: JSON.stringify(newProduct),
+      body: JSON.stringify(updatedProduct),
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        if (data.insertedId) {
+        // console.log(data);
+        if (data.modifiedCount > 0) {
           Swal.fire({
             title: "Success!",
-            text: "Product Added Successfully!",
+            text: "Products Updated Successfully!",
             icon: "success",
             confirmButtonText: "Cool",
           });
         }
       });
   };
+
   return (
     <div className="bg-[#f4f4f0] px-24 py-10 ">
       <div className="w-2/3 mx-auto">
         <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-10">
-          Add Product
+          Update Product
         </h2>
-        <form className="" onSubmit={handleAddProduct}>
+        <form className="" onSubmit={handleUpdateProduct}>
           {/* Form name & brand name row */}
           <div className="flex mb-8">
             <div className="form-control md:w-1/2">
@@ -60,6 +67,7 @@ const AddProduct = () => {
                 <input
                   type="Text"
                   name="name"
+                  defaultValue={name}
                   placeholder="Product Name"
                   className="input input-bordered w-full"
                 />
@@ -73,6 +81,7 @@ const AddProduct = () => {
                 <input
                   type="text"
                   name="brand"
+                  defaultValue={brand}
                   placeholder="Brand Name"
                   className="input input-bordered w-full"
                 />
@@ -88,13 +97,14 @@ const AddProduct = () => {
                   <span className="label-text font-bold">Description</span>
                 </label>
                 <label className="input-group">
-                <input
-                  type="text"
-                  name="description"
-                  placeholder="Description"
-                  className="input input-bordered w-full"
-                />
-              </label>
+                  <input
+                    type="text"
+                    name="description"
+                    defaultValue={description}
+                    placeholder="Description"
+                    className="input input-bordered w-full"
+                  />
+                </label>
               </div>
             </div>
             <div className="form-control md:w-1/2">
@@ -103,16 +113,17 @@ const AddProduct = () => {
               </label>
               <select
                 name="rating"
+                defaultValue={rating}
                 className="select select-ghost w-full max-w-xs"
               >
                 <option className=" font-bold">
                   Choose the Rating you want to give this product!
                 </option>
-                <option value='1'>1</option>
-                <option value='2'>2</option>
-                <option value='3'>3</option>
-                <option value='4'>4</option>
-                <option value='5'>5</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
               </select>
             </div>
           </div>
@@ -124,6 +135,7 @@ const AddProduct = () => {
               </label>
               <select
                 name="type"
+                defaultValue={type}
                 className="select select-ghost w-full max-w-xs"
               >
                 <option className=" font-bold">
@@ -147,6 +159,7 @@ const AddProduct = () => {
                   <input
                     type="text"
                     name="price"
+                    defaultValue={price}
                     placeholder="Price"
                     className="input input-bordered w-full"
                   />
@@ -165,6 +178,7 @@ const AddProduct = () => {
                 <input
                   type="text"
                   name="image"
+                  defaultValue={image}
                   placeholder="Photo URL"
                   className="input input-bordered w-full"
                 />
@@ -174,7 +188,7 @@ const AddProduct = () => {
           {/* Submit Button */}
           <input
             type="submit"
-            value="Add New Product"
+            value="Update Product"
             className="btn btn-block hover:text-red-600 text-white bg-red-600 font-semibold"
           />
         </form>
@@ -183,4 +197,4 @@ const AddProduct = () => {
   );
 };
 
-export default AddProduct;
+export default UpdateProducts;
