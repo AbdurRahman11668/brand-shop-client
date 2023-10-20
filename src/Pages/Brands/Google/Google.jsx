@@ -14,7 +14,7 @@ const Google = () => {
       <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative w-full">
           <img
-            src="https://i.ibb.co/F3yK5zJ/8ef726ffe903afa19aa545e23f3b9c72.png"
+            src="https://i.ibb.co/tq7dH86/google-banner.jpg"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -28,7 +28,7 @@ const Google = () => {
         </div>
         <div id="slide2" className="carousel-item relative w-full">
           <img
-            src="https://i.ibb.co/y4zbNM8/apple-landing-page.webp"
+            src="https://i.ibb.co/mCyYxrD/google-pixel-4-banner.jpg"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -42,7 +42,7 @@ const Google = () => {
         </div>
         <div id="slide3" className="carousel-item relative w-full">
           <img
-            src="https://i.ibb.co/VqysjNS/one-day-apple-sale-banner.jpg"
+            src="https://i.ibb.co/dKBFGHZ/10292020-Google-Pixel2-STORY-LEVEL-BANNER-1600x483.jpg"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -56,7 +56,7 @@ const Google = () => {
         </div>
         <div id="slide4" className="carousel-item relative w-full">
           <img
-            src="https://i.ibb.co/5hSw80B/ezgif-com-gif-maker.png"
+            src="https://i.ibb.co/xh1nv0n/Balance-PIxel-5-Catbanner-1280x600px.png"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">

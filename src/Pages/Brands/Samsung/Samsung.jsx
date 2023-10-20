@@ -12,7 +12,7 @@ const Samsung = () => {
       <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative w-full">
           <img
-            src="https://i.ibb.co/F3yK5zJ/8ef726ffe903afa19aa545e23f3b9c72.png"
+            src="https://i.ibb.co/3zPKqwM/Samsung-Galaxy-S21-modelos.jpg"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -26,7 +26,7 @@ const Samsung = () => {
         </div>
         <div id="slide2" className="carousel-item relative w-full">
           <img
-            src="https://i.ibb.co/y4zbNM8/apple-landing-page.webp"
+            src="https://i.ibb.co/gTng5sG/Samsung-Galaxy-S21-Press-Renders-Web-Banner.jpg"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -40,7 +40,7 @@ const Samsung = () => {
         </div>
         <div id="slide3" className="carousel-item relative w-full">
           <img
-            src="https://i.ibb.co/VqysjNS/one-day-apple-sale-banner.jpg"
+            src="https://i.ibb.co/TPv374w/46aa15356bfd9ccc.jpg"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -54,7 +54,7 @@ const Samsung = () => {
         </div>
         <div id="slide4" className="carousel-item relative w-full">
           <img
-            src="https://i.ibb.co/5hSw80B/ezgif-com-gif-maker.png"
+            src="https://i.ibb.co/F577mPS/banner-r62-Tk-Ic.jpg"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">

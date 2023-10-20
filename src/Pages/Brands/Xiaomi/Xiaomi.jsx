@@ -12,7 +12,7 @@ const Xiaomi = () => {
       <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative w-full">
           <img
-            src="https://i.ibb.co/F3yK5zJ/8ef726ffe903afa19aa545e23f3b9c72.png"
+            src="https://i.ibb.co/k93ffVR/517b1430e7b8c0aae0fa41ba578cae57-823x269.png"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -26,7 +26,7 @@ const Xiaomi = () => {
         </div>
         <div id="slide2" className="carousel-item relative w-full">
           <img
-            src="https://i.ibb.co/y4zbNM8/apple-landing-page.webp"
+            src="https://i.ibb.co/zmHSKQG/20230628134559-xiaomi-brand-header-desktop.webp"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -40,7 +40,7 @@ const Xiaomi = () => {
         </div>
         <div id="slide3" className="carousel-item relative w-full">
           <img
-            src="https://i.ibb.co/VqysjNS/one-day-apple-sale-banner.jpg"
+            src="https://i.ibb.co/qB5ddWx/d930ce57a6481a12f0589fe50a63308a-2560x800.jpg"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -54,7 +54,7 @@ const Xiaomi = () => {
         </div>
         <div id="slide4" className="carousel-item relative w-full">
           <img
-            src="https://i.ibb.co/5hSw80B/ezgif-com-gif-maker.png"
+            src="https://i.ibb.co/vhvL3yB/E-Bargain.webp"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
