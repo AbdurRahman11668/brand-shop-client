@@ -32,12 +32,15 @@ const GoogleCard = ({ product}) => {
                 ))}
               </div>
               <p className="text-md font-semibold text-gray-600 pb-2">
-                {description}
+              {description.length > 150 ? 
+          <p>{description.slice(0, 150)} ....</p>
+          : 
+        <p>{description}</p>}
               </p>
               <p className="text-md font-semibold text-gray-600 pb-2">
                Price: <span className="text-red-700">{price}</span></p>
               <div className="space-x-10">
-                <Link to={`/google/${_id}`}>
+                <Link to={`/details/${_id}`}>
                   <button className="text-lg px-5 font-semibold btn bg-red-600 text-white hover:border-red-600 hover:text-red-600">
                     Details
                   </button>
