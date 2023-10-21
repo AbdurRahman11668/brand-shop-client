@@ -36,7 +36,7 @@ const Details = () => {
       price2,
       image2,
     };
-    fetch("http://localhost:5000/cart", {
+    fetch("https://brans-shop.vercel.app/cart", {
       method: "POST",
       headers: {
         "content-type": "application/json",

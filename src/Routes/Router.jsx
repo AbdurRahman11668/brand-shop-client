@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root></Root>,
     errorElement: <ErrorPage></ErrorPage>,
-    loader: () => fetch("http://localhost:5000/"),
+    loader: () => fetch("https://brans-shop.vercel.app/"),
     children: [
       {
         path: "/",
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
             <AddProduct></AddProduct>
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/products"),
+        loader: () => fetch("https://brans-shop.vercel.app/products"),
       },
       {
         path: "/login",
@@ -47,22 +47,22 @@ const router = createBrowserRouter([
       {
         path: "/apple",
         element: <Apple></Apple>,
-        loader: () => fetch("http://localhost:5000/products"),
+        loader: () => fetch("https://brans-shop.vercel.app/products"),
       },
       {
         path: "/samsung",
         element: <Samsung></Samsung>,
-        loader: () => fetch("http://localhost:5000/products"),
+        loader: () => fetch("https://brans-shop.vercel.app/products"),
       },
       {
         path: "/sony",
         element: <Sony></Sony>,
-        loader: () => fetch("http://localhost:5000/products"),
+        loader: () => fetch("https://brans-shop.vercel.app/products"),
       },
       {
         path: "/xiaomi",
         element: <Xiaomi></Xiaomi>,
-        loader: () => fetch("http://localhost:5000/products"),
+        loader: () => fetch("https://brans-shop.vercel.app/products"),
       },
       {
         path: "/microsoft",
@@ -71,13 +71,13 @@ const router = createBrowserRouter([
       {
         path: "/google",
         element: <Google></Google>,
-        loader: () => fetch("http://localhost:5000/products"),
+        loader: () => fetch("https://brans-shop.vercel.app/products"),
       },
       {
         path: "/updateproducts/:id",
         element: <UpdateProducts></UpdateProducts>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.id}`),
+          fetch(`https://brans-shop.vercel.app/products/${params.id}`),
       },
       {
         path: "/details/:id",
@@ -86,7 +86,7 @@ const router = createBrowserRouter([
             <Details></Details>
           </PrivateRoute>
         ),
-        loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`),
+        loader: ({ params }) => fetch(`https://brans-shop.vercel.app/products/${params.id}`),
       },
       {
         path: "/cart",
@@ -95,7 +95,7 @@ const router = createBrowserRouter([
             <MyCart></MyCart>
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/cart"),
+        loader: () => fetch("https://brans-shop.vercel.app/cart"),
       },
       
     ],

@@ -20,7 +20,7 @@ const MyCart = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         fetch(
-          `http://localhost:5000/cart/${_id}`,
+          `https://brans-shop.vercel.app/cart/${_id}`,
           {
             method: "DELETE",
           }
