@@ -1,1 +1,1 @@
-https://brand-shop-1f594.web.app/
+Live-Link: https://resonant-cassata-46b9a1.netlify.app/
